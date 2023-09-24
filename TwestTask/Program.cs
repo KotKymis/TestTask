@@ -46,11 +46,6 @@ namespace sob
                 decimal? standard5 = GetStandardById(standards, tariffId5); // Норматив для Теплоноситель
                 decimal? standard6 = GetStandardById(standards, tariffId6); // Норматив для Тепловая энергия
 
-<<<<<<< HEAD
-=======
-                // Теперь у вас есть значения TariffPrice и Standard для использования в других методах
-
->>>>>>> 612a181ef29572f6424267228d427ede08d16c89
                 // Проверка допустимости значения ID
                 static decimal? GetTariffPriceById(List<decimal?> tariffPrices, long tariffId)
                 {
