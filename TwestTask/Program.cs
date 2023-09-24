@@ -25,7 +25,6 @@ namespace sob
                 List<decimal?> tariffPrices = db.Tariffs.Select(t => t.TariffPrice).ToList();
                 List<decimal?> standards = db.Tariffs.Select(t => t.Standard).ToList();
 
-                //  Id для TariffPrice и Standard
                 long tariffId1 = 0;
                 long tariffId2 = 1;
                 long tariffId3 = 2;
