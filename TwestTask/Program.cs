@@ -25,7 +25,6 @@ namespace sob
                 List<decimal?> tariffPrices = db.Tariffs.Select(t => t.TariffPrice).ToList();
                 List<decimal?> standards = db.Tariffs.Select(t => t.Standard).ToList();
 
-                //  Id для TariffPrice и Standard
                 long tariffId1 = 0;
                 long tariffId2 = 1;
                 long tariffId3 = 2;
@@ -46,6 +45,8 @@ namespace sob
                 decimal? standard2 = GetStandardById(standards, tariffId2); // Норматив для Электроэнергия 
                 decimal? standard5 = GetStandardById(standards, tariffId5); // Норматив для Теплоноситель
                 decimal? standard6 = GetStandardById(standards, tariffId6); // Норматив для Тепловая энергия
+
+                // Теперь у вас есть значения TariffPrice и Standard для использования в других методах
 
                 // Проверка допустимости значения ID
                 static decimal? GetTariffPriceById(List<decimal?> tariffPrices, long tariffId)
